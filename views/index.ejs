@@ -3,6 +3,12 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 <style>
 
 
@@ -50,9 +56,61 @@
         
         </div>
 
+
+
+
+
+
+
+
+		
+
         
                 <!-- #Banner -->
         		<div id="main" class="site-main">
+
+
+
+
+
+
+
+<!-- Popup Modal -->
+<div id="popModal" class="modal fade" role="dialog" style="margin-top: 200px;">
+	<div class="modal-dialog">
+	  <!-- Modal content-->
+	  <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title">Apply For Loan</h5>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+		<div class="modal-body">
+			<p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Name" id="name">
+				</div>
+				<div class="form-group">
+					<input type="number" class="form-control" placeholder="Mobile Number" id="number">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" placeholder="Email Address" id="email">
+				</div>
+				<div class="form-group">
+					<input type="number" class="form-control" placeholder="Loan Amount" id="amount">
+				</div>
+				<button type="submit" class="btn btn-primary">Apply</button>
+			</form>
+		</div>
+	</div>
+   
+	</div>
+  </div>
+
+
+
+
+
 					
 		<div data-elementor-type="wp-page" data-elementor-id="11" class="elementor elementor-11" data-elementor-settings="[]">
 							<div class="elementor-section-wrap">
@@ -183,29 +241,7 @@ style="background-image: url('/images/large.jpg');
 
 
 
-		<div id="myModal" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Subscribe our Newsletter</h5>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-					<div class="modal-body">
-						<p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Name">
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" placeholder="Email Address">
-							</div>
-							<button type="submit" class="btn btn-primary">Subscribe</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
+	
 
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-ab5ed9c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ab5ed9c" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
@@ -728,7 +764,23 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 </script>
 <script type='text/javascript' src='https://cash2lending.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.1.2' id='elementor-frontend-js'></script>
 <script type='text/javascript' src='https://cash2lending.com/wp-content/plugins/elementor/assets/js/preloaded-elements-handlers.min.js?ver=3.1.2' id='preloaded-elements-handlers-js'></script>
-					<style type="text/css"
+					
+
+
+
+
+
+
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+	$(function() {  $("#popModal").modal('show'); });
+	</script>
+
+
+
+
+<style type="text/css"
 						   id="forminator-custom-form-styles-82">
 						.forminator-custom-form-82 {
 		padding-top: 0;
