@@ -1,4 +1,5 @@
 var createError = require('http-errors');
+var cookieSession = require("cookie-session");
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -18,6 +19,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+app.use(
+  cookieSession({
+    name: "session",
+    keys: ["naman"],
+
+     //Cookie Options
+    maxAge: 168 * 60 * 60 * 100 // 24 hours
+  })
+);
+
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
