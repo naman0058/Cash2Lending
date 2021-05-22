@@ -2,6 +2,9 @@
 
 <%- include ('./header.ejs') %>
 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&amp;display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -26,6 +29,765 @@
    height: 450px;
    padding-top: 50px;
    }
+
+
+
+
+   body{margin-top:20px;}
+.section-title {
+    position: relative;
+}
+.section-title h2 {
+    color: #1d2025;
+    position: relative;
+    margin: 0;
+    font-size: 24px;
+}
+@media (min-width: 768px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+@media (min-width: 992px) {
+    .section-title h2 {
+        font-size: 34px;
+    }
+}
+.section-title.title-ex1 h2 {
+    padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .section-title.title-ex1 h2 {
+        padding-bottom: 30px;
+    }
+}
+@media (min-width: 992px) {
+    .section-title.title-ex1 h2 {
+        padding-bottom: 40px;
+    }
+}
+.section-title.title-ex1 h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    width: 110px;
+    height: 1px;
+    background-color: #d6dbe2;
+}
+@media (min-width: 768px) {
+    .section-title.title-ex1 h2:before {
+        bottom: 17px;
+    }
+}
+@media (min-width: 992px) {
+    .section-title.title-ex1 h2:before {
+        bottom: 25px;
+    }
+}
+.section-title.title-ex1 h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    width: 40px;
+    height: 1px;
+    background-color: #0cc652;
+}
+@media (min-width: 768px) {
+    .section-title.title-ex1 h2:after {
+        bottom: 17px;
+    }
+}
+@media (min-width: 992px) {
+    .section-title.title-ex1 h2:after {
+        bottom: 25px;
+    }
+}
+.section-title.title-ex1.text-center h2:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-title.title-ex1.text-center h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-title.title-ex1.text-right h2:before {
+    left: auto;
+    right: 0;
+}
+.section-title.title-ex1.text-right h2:after {
+    left: auto;
+    right: 0;
+}
+.section-title.title-ex1 p {
+    font-family: "Montserrat", sans-serif;
+    color: #8b8e93;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.price-card {
+    background: #f5f5f6;
+    padding: 40px 35px;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.price-card:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -35px;
+    width: 88px;
+    height: 88px;
+    background: #0cc652;
+    opacity: 0.2;
+    border-radius: 8px;
+    transform: rotate(45deg);
+}
+.price-card:after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    right: -35px;
+    width: 88px;
+    height: 88px;
+    background: #0cc652;
+    opacity: 0.2;
+    border-radius: 8px;
+    transform: rotate(45deg);
+}
+.price-card h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+.price-card .btn {
+    font-size: 11px;
+    border-radius: 100px;
+    padding: 0 25px;
+    border: 0;
+    color: #fff;
+    float: right;
+}
+.price-card .btn.btn-primary {
+    border: 0 !important;
+}
+.price-card.featured {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.price-card:hover .btn {
+    background: #0cc652;
+    border-color: #0cc652;
+}
+p.price span {
+    display: inline-block;
+    padding: 45px 15px 50px;
+    padding-right: 0;
+    font-size: 50px;
+    font-weight: 600;
+    color: #0cc652;
+    position: relative;
+}
+p.price span:before {
+    position: absolute;
+    content: "$";
+    font-size: 16px;
+    top: 25px;
+    font-weight: 300;
+    left: 0;
+}
+.pricing-offers {
+    padding: 0 0 10px;
+}
+.pricing-offers li {
+    padding: 0 0 16px;
+    line-height: 18px;
+}
+ul li {
+    list-style-type: none;
+}
+.btn.btn-mid {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+
+
+
+h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {}
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            color: #333;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+
+.rnd {
+  color:#f91942;
+}
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.section-head {
+  margin-bottom: 60px;
+}
+.section-head h4 {
+  position: relative;
+  padding:0;
+  color:#f91942;
+  line-height: 1;
+  letter-spacing:0.3px;
+  font-size: 34px;
+  font-weight: 700;  
+  text-align:center;
+  text-transform:none;
+  margin-bottom:30px;
+}
+.section-head h4:before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #f91942;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  right:0;  
+  margin:0 auto;
+}
+.section-head h4 span {
+  font-weight: 700;
+  padding-bottom: 5px;
+  color:#2f2f2f
+}
+p.service_text{
+  color:#cccccc !important;
+  font-size:16px;
+  line-height:28px;
+  text-align:center;    
+}
+.section-head p, p.awesome_line{
+  color:#818181;
+  font-size:16px;
+  line-height:28px;
+  text-align:center;  
+}
+
+.extra-text {
+    font-size:34px;
+    font-weight: 700;
+    color:#2f2f2f;
+    margin-bottom: 25px;
+    position:relative;
+    text-transform: none;
+}
+.extra-text::before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f91942;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+.extra-text span {
+    font-weight: 700;
+    color:#f91942;
+}
+.item {
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+    box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    border:5px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover{
+ 
+    box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover .item, .item:hover span.icon{
+   
+    border-radius:10px;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover h6, .item:hover p{
+  
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item .icon {
+    font-size: 40px;
+    margin-bottom:25px;
+    color: #f91942;   
+    width: 90px;
+    height: 90px;
+    line-height: 96px;
+    border-radius: 50px;
+}
+.item .feature_box_col_one{
+    background: lightblue;
+    color:#f91942
+}
+.item .feature_box_col_two{
+    background:pink;
+    color:#f91942
+}
+.item .feature_box_col_three{
+    background:lightgreen;
+    color:#f91942
+}
+.item .feature_box_col_four{
+    background:rgba(0, 108, 255, 0.15);
+    color:#f91942
+}
+.item .feature_box_col_five{
+    background:rgba(146, 39, 255, 0.15);
+    color:#f91942
+}
+.item .feature_box_col_six{
+    background:rgba(23, 39, 246, 0.15);
+    color:#f91942
+}
+.item p{
+    font-size:15px;
+    line-height:26px;
+}
+.item h6 {
+    margin-bottom:20px;
+    color:#2f2f2f;
+}
+.mission p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.mission i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #f91942;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+.mission .small-text {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #666;
+}
+.skills {
+    padding-top:0px;
+}
+.skills .prog-item {
+    margin-bottom: 25px;
+}
+.skills .prog-item:last-child {
+    margin-bottom: 0;
+}
+.skills .prog-item p {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.skills .prog-item .skills-progress {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius:20px;
+    position: relative;
+}
+.skills .prog-item .skills-progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #f91942;
+    width: 10%;
+    border-radius: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.skills .prog-item .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 10px;
+    font-weight:600;    
+    color: #fff;
+    background:rgba(0, 0, 0, 0.9);
+    padding: 3px 7px;
+    border-radius: 30px;
+}
+
+
+
+h1 {
+  margin: 60px 0;
+}
+
+.accordion__item {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+}
+.accordion__body {
+  display: none;
+  padding-top: 10px;
+}
+.accordion__body p {
+  margin-bottom: 0;
+}
+.accordion__title {
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 0;
+  position: relative;
+}
+.accordion__title:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABlUlEQVRIS72V6zEEQRSFv81ABogAESADIiADRIAIEAEiQASIABmQgQyor+rerZ7enp71Y92qqZrpxznnPmfGim22YnyWITgGdoHteNT0Hs8j8NQT2SM4AK6AjQkvP4EzQLIFGyO4Bk7i9Bfg90uodllv9oBTYD3OeUaigbUISnAv+N0zSfRUuwnS+fmawLA8xO5OoXiqFvToLQ4dluGqCYynLi+jvCZNT8TYzM2SwGq5BYz5VGLHPEqBcy9KgjvgqFJ/ETn4HkFci2K4jP304h5Q8KAPrO0tIGMv+HnkYR+oSQR/joqSwPOZC7HEGRD8hIr0SgBLU1IvlCQl+EeUbAoY4JQhqgnka5G4nsprcPdGCeoQZdhrkmy0FniGyD3fByFqJblF4loL3PVukrPJBnVcVE964pJjolVZ3TL14lSjSaK1wFP9oI/+fVSorhx2qnKA9exPwy6BShLD5vdrNa79CQmeY2VhktZVVKs06QLnvB/zwphL9KcfTgkmkY91bVdnmdo3gjaBE2CZf/JECvrbKyf4BdpXaxkir2UhAAAAAElFTkSuQmCC") no-repeat;
+  background-size: 20px;
+}
+.accordion__title.active {
+  color: #2B9FDF;
+}
+.accordion__title.active:after {
+  transform: rotate(-180deg);
+}
+
+
+
+
+/******************************************************************\
+ * READ FIRST:
+ *
+ * The target for this solution is keep compatibility with old
+ * browsers by using only the float property.
+ *
+ * Four Card Section Challenge | Main Stylesheet.
+ *
+ * Challenge by Frontend Mentor. Coded by Alfonso Suarez.
+ * 
+ ******************************************************************/
+
+/*
+ * # Common Styles Rules 
+ */
+
+/*
+ * ## Global
+ */
+
+/* 
+ * I would prefer to declare variables, but due the bad compatibility
+ * between IE browsers and CSS variables, I omitted their use.
+ *
+:root {
+  --color-prim-cyan:   hsl(180, 62%, 55%);
+  --color-prim-red:    hsl(0, 78%, 62%);
+  --color-prim-orange: hsl(34, 97%, 64%);
+  --color-prim-blue:   hsl(212, 86%, 64%);
+  --color-neut-vdblue: hsl(234, 12%, 34%);
+  --color-neut-grblue: hsl(229, 6%, 66%);  
+}
+ *
+ */
+
+/*
+ * ## Document Body
+ */
+
+ body {
+  /* Clean content offset */
+  margin: 0; padding: 0;
+
+  /* Set common font styles */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/*
+ * ## Elements Styles
+ */
+
+h1, h2 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+p { color: hsl(229, 6%, 66%); }
+
+/* - - - */
+
+/*
+ * # Specific Styles Rules
+ */
+
+/*
+ * ## Main Header Element
+ */
+
+
+
+
+/*
+ * ## Cards Container Class
+ */
+
+.cards-container {
+  /* List Styling Clean-Up */
+  list-style: none;
+  padding: 0; margin: 0;
+
+  /* Alignment */
+  margin: auto;
+}
+
+/*
+ * ### Responsive Layout Rules
+ */
+
+/* When viewport width is equal or greater than 788 pixels,
+ * the cards container will fix its width and will append the
+ * clear fix pseudo-class to avoid float property issues.
+ *
+ * The width will depend from the current viewport width.
+ * If is greater than 1166 pixels, will be 1106 pixels.
+ * Else, then will be 728 pixels.
+ */
+
+@media (min-width: 788px) {
+  .cards-container { 
+    width: 728px;
+  }
+  /* Clear Fix */
+  .cards-container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media (min-width: 1166px) {
+  .cards-container {
+    width: 1106px;
+  }
+}
+
+/*
+ * ## Feature Card Class
+ */
+
+[class$='feature-card'] {
+  /* Positioning and Sizing */
+  position: relative;
+  box-sizing: border-box;
+  width: 350px; height: 250px;
+
+  /* Alignment */
+  margin: 0;
+  padding: 32px;
+
+  /* Box Details */
+  border-radius: 10px;
+  border-top: solid 5px black;
+  box-shadow: 2px 5px 20px rgb(0,0,0,0.1);
+}
+ 
+/*
+ * ### Inner Elements
+ */
+
+[class$='feature-card'] h2, [class$='feature-card'] p { margin: 0; }
+
+[class$='feature-card'] img {
+  position: absolute;
+  bottom: 32px; right: 32px;
+}
+
+/*
+ * ### Top Border Colors Rules
+ */
+
+[class$='feature-card'][class*='cyan'] {
+  border-color: hsl(180, 62%, 55%);
+}
+
+[class$='feature-card'][class*='red'] {
+  border-color: hsl(0, 78%, 62%);
+}
+
+[class$='feature-card'][class*='orange'] {
+  border-color: hsl(34, 97%, 64%);
+}
+
+[class$='feature-card'][class*='blue'] {
+  border-color: hsl(212, 86%, 64%);
+}
+
+/*
+ * ### Responsive Layout Rules
+ */
+
+/* When the viewport width is less than 788 pixels, the container
+ * will not be fixed and every card will arrange normally one over
+ * other. This layout is comfortable for mobile devices.
+ *
+ * But if is equal or greather, every card will set the float
+ * property to the left.
+ *
+ * They will sort smartly on a grid of two columns and two rows if
+ * the current viewport width is less than 1166 pixels, that is,
+ * for notebooks and tablets screens.
+ *
+ * Else, then they will sort like the final challenge for desktop
+ * larger screens (with a viewport width greather than 1166 pixels.)
+ *
+ * I had to hard coded every effect because I only use float
+ * properties. And I didn't went to use auxiliar HTML elements,
+ * trying to keep separation of concerns.
+ */
+
+@media (min-width: 788px) {
+  [class$='feature-card'] {
+    float: left;
+  }
+
+  @media (min-width: 1166px) {
+    
+    [class$='feature-card']:first-child {
+      margin: 140px 0;
+    }
+   
+    [class$='feature-card']:nth-child(2),
+    [class$='feature-card']:nth-child(3) {
+      margin: 0 22px;
+    }
+
+    [class$='feature-card']:last-child {
+      margin-top: -110px;
+    }
+
+    [class$='feature-card']:nth-child(3) {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 1165px) {
+
+    [class$='feature-card']:nth-child(3),
+    [class$='feature-card']:nth-child(4) {
+      margin-top: 30px;
+    }
+
+    [class$='feature-card']:nth-child(2),
+    [class$='feature-card']:nth-child(4) {
+      margin-left: 28px;
+    }
+  }
+}
+
+@media (max-width: 787px) {
+
+  [class$='feature-card'] {
+    width: 300px; height: 220px;
+    margin: auto;
+  }
+
+  [class$='feature-card']:not(:first-child) {
+    margin-top: 22px;
+  }
+}
+
+/*
+ * ## Main Footer
+ */
+
+
+
+/*
+ * ## Attribution Watermark
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 <div class="topsearch">
    <form role="search" method="get" class="search-form" action="">
@@ -88,7 +850,7 @@
             <div class="container">
                <div class="row">
                   <!-- <h1 style="font-size: 40px;font-weight: bold;margin-top: -10px;">Borrow better. Faster.......</h1> -->
-                  <h1 style="font-size: 50px;font-weight: bold;">Personal Loans</h1>
+                  <h1 style="font-size: 50px;font-weight: bold;color: white;">Personal Loans</h1>
                   <br>
                   <h4 style="font-size: 22px;">Borrow $2,000 to $15,000* as soon as the next business day ‡ from 3% to 5 % APR.</h4>
                   <br>
@@ -361,7 +1123,7 @@
                </div>
             </div>
          </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-6ce5aae3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ce5aae3" data-element_type="section">
+         <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-6ce5aae3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ce5aae3" data-element_type="section">
             <div class="elementor-container elementor-column-gap-wider">
                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-66633c3f" data-id="66633c3f" data-element_type="column">
                   <div class="elementor-widget-wrap elementor-element-populated">
@@ -450,7 +1212,51 @@
                   </div>
                </div>
             </div>
-         </section>
+         </section> -->
+      
+      
+  <h1 style="text-align: center;color: #000;">Our Features</h1>
+          
+          <main style="margin-bottom: 30px;margin-top: 30px;">
+            <ul class="cards-container">
+              <li class="cyan-feature-card">
+                <h2>PAYDAY LOANS
+               </h2>
+                <p>
+                  Get a little extra money before your next paycheck with an Cash2lending Advance (also called a Payday Loan)
+                </p>
+               
+              </li>
+          
+              <li class="red-feature-card">
+                <h2>INSTALLMENT LOANS</h2>
+                <p>
+                  Get the money you need right now. Pay it back over time.
+                </p>
+              
+              </li>
+          
+              <li class="orange-feature-card">
+                <h2>TITLE LOANS</h2>
+                <p>
+                  Get the money you need while continuing to drive your vehicle.
+                </p>
+              
+              </li>
+          
+              <li class="blue-feature-card">
+                <h2>LINE OF CREDIT</h2>
+                <p>
+                  Enjoy convenient, personal access to money whenever you need it.
+                </p>
+              
+              </li>
+            </ul>
+          </main>
+          
+       
+      
+      
          <section class="elementor-section elementor-top-section elementor-element elementor-element-15f3f5ae elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="15f3f5ae" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="elementor-container elementor-column-gap-default">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7d481d4a" data-id="7d481d4a" data-element_type="column">
@@ -479,7 +1285,7 @@
                            </div>
                         </div>
                      </div>
-                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-5d83ec1f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5d83ec1f" data-element_type="section">
+                     <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-5d83ec1f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5d83ec1f" data-element_type="section">
                         <div class="elementor-container elementor-column-gap-default">
                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4105d4b6" data-id="4105d4b6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                               <div class="elementor-widget-wrap elementor-element-populated">
@@ -602,12 +1408,69 @@
                               </div>
                            </div>
                         </div>
-                     </section>
+                     </section> -->
+                 
+                 
+                     <section class="pricing-section">
+                        <div class="container">
+                         
+                          <!-- Pricing Table starts -->
+                          <div class="row">
+                             <div class="col-md-4">
+                                <div class="price-card" style="height: 280px;">
+                                   <h2>YOU ARE NOT A LOAN.
+                                 </h2>
+                                   <!-- <p>The standard version</p> -->
+                                 
+                                   <ul class="pricing-offers">
+                                      <li>We’ll work with you to find the perfect loan solution to fit your life.</li>
+                                      <!-- <li>8 E-Mail Address</li>
+                                      <li>10GB Disk Space</li>
+                                      <li>Monthly Bandwidth</li>
+                                      <li>Powerful Admin Panel</li> -->
+                                   </ul>
+                                   <a href="/apply" class="btn btn-primary btn-mid">Get Started</a>
+                                </div>
+                             </div>
+                             <div class="col-md-4">
+                                <div class="price-card featured" style="height: 280px;">
+                                   <h2>SEIZE THE TODAY</h2>
+                                   <!-- <p>Most popular choice</p>
+                                   <p class="price"><span>69</span>/ Month</p> -->
+                                   <ul class="pricing-offers">
+                                      <li>Receive approval in minutes and get your money in time to tackle your day.</li>
+                                      <!-- <li>8 E-Mail Address</li>
+                                      <li>10GB Disk Space</li>
+                                      <li>Monthly Bandwidth</li>
+                                      <li>Powerful Admin Panel</li> -->
+                                   </ul>
+                                   <a href="/apply" class="btn btn-primary btn-mid">Get Started</a>
+                                </div>
+                             </div>
+                             <div class="col-md-4">
+                                <div class="price-card" style="height: 280px;">
+                                   <h2>PREPARE FOR THE BEST</h2>
+                                   <!-- <p>For the whole team</p>
+                                   <p class="price"><span>89</span>/ Month</p> -->
+                                   <ul class="pricing-offers">
+                                      <li>Have confidence knowing we will always be transparent and keep your information safe.</li>
+                                      <!-- <li>8 E-Mail Address</li>
+                                      <li>10GB Disk Space</li>
+                                      <li>Monthly Bandwidth</li>
+                                      <li>Powerful Admin Panel</li> -->
+                                   </ul>
+                                   <a href="/apply" class="btn btn-primary btn-mid">Get Started</a>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </section>
+                 
                   </div>
                </div>
             </div>
          </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-142abf51 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="142abf51" data-element_type="section">
+         <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-142abf51 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="142abf51" data-element_type="section">
             <div class="elementor-container elementor-column-gap-wide">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7f6abf0d" data-id="7f6abf0d" data-element_type="column">
                   <div class="elementor-widget-wrap elementor-element-populated">
@@ -787,7 +1650,89 @@
                   </div>
                </div>
             </div>
-         </section>
+         </section> -->
+        
+        
+        
+        
+        
+        
+        
+         <div class="container my-5">
+            <div class="text-center mb-5">
+              <span class="text-secondary text-uppercase">Question7s</span>
+              <h1 class="text-capitalize font-weight-bold">Frequently Asked <span style="color: #9B5DE5;">Questions</span></h1>
+            </div>
+          
+            <div class="row">
+              
+              <!-- 
+                div:hover {
+                  background-color: #9B5DE5;
+                }
+               -->
+          
+              <div class="col-md-6">
+                <div class="my-3 p-4 bg-light">
+                  <div class="d-flex align-items-start">
+                    <div class="mr-3 bg-dark text-white rounded-circle">
+                    </div>
+                    <div class="">
+                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What is a Cash Advance (also known as a Payday Loan)?</h6></a>
+                      <p class="text-secondary" style="line-height: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis assumenda ad deleniti optio dolorum fugiat nobis consequuntur deserunt aut.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-6">
+                <div class="my-3 p-4 bg-light">
+                  <div class="d-flex align-items-start">
+                    <div class="mr-3 bg-dark text-white rounded-circle">
+                    </div>
+                    <div class="">
+                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What could be your 2nd question?</h6></a>
+                      <p class="text-secondary" style="line-height: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis assumenda ad deleniti optio dolorum fugiat nobis consequuntur deserunt aut.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-6">
+                <div class="my-3 p-4 bg-light">
+                  <div class="d-flex align-items-start">
+                    <div class="mr-3 bg-dark text-white rounded-circle">
+                    </div>
+                    <div class="">
+                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What could be your 3rd question?</h6></a>
+                      <p class="text-secondary" style="line-height: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis assumenda ad deleniti optio dolorum fugiat nobis consequuntur deserunt aut.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-6">
+                <div class="my-3 p-4 bg-light">
+                  <div class="d-flex align-items-start">
+                    <div class="mr-3 bg-dark text-white rounded-circle">
+                    </div>
+                    <div class="">
+                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What could be your 4th question?</h6></a>
+                      <p class="text-secondary" style="line-height: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis assumenda ad deleniti optio dolorum fugiat nobis consequuntur deserunt aut.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+        
+          
+        
+        
+        
+        
          <section class="elementor-section elementor-top-section elementor-element elementor-element-11ed2c2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="11ed2c2" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1e747a7" data-id="1e747a7" data-element_type="column">
@@ -860,25 +1805,110 @@
                </div>
             </div>
          </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-436d85aa elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="436d85aa" data-element_type="section">
+         <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-436d85aa elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="436d85aa" data-element_type="section">
             <div class="elementor-container elementor-column-gap-no">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4d52406d" data-id="4d52406d" data-element_type="column">
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="elementor-element elementor-element-54ad9e91 elementor-widget elementor-widget-text-editor" data-id="54ad9e91" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
                            <div class="elementor-text-editor elementor-clearfix">
-                              <p>Consumer Notice: Payday loans or cash advances are made for the purpose of assisting consumers with short-term financing to resolve immediate cash needs and should not be considered a long-term solution. Submitting a loan request on this website does not guarantee that you will be connected with an independent lender or approved for a loan or cash advance. Loan terms, including loan amounts and transfer times for loans, vary among lenders and may be dependent upon the laws of the state in which you reside. If you are connected with a lender on our website, you may be directed to a third party website whose privacy practices and terms of use may significantly differ from our own. You are encouraged to read your lender’s privacy practices and terms of use. Consumers facing financial debt difficulties should seek advice from the appropriate professional before entering into any type of loan. You are encouraged to contact your lender directly for more information.</p>
+                              <p style="color: black;font-weight: bold;font-family:'Times New Roman', Times, serif ;">Consumer Notice: Payday loans or cash advances are made for the purpose of assisting consumers with short-term financing to resolve immediate cash needs and should not be considered a long-term solution. Submitting a loan request on this website does not guarantee that you will be connected with an independent lender or approved for a loan or cash advance. Loan terms, including loan amounts and transfer times for loans, vary among lenders and may be dependent upon the laws of the state in which you reside. If you are connected with a lender on our website, you may be directed to a third party website whose privacy practices and terms of use may significantly differ from our own. You are encouraged to read your lender’s privacy practices and terms of use. Consumers facing financial debt difficulties should seek advice from the appropriate professional before entering into any type of loan. You are encouraged to contact your lender directly for more information.</p>
                               <p></p>
-                              <p>Legal Disclaimer: Finance Solution Center is not a lender, does not broker loans, and does not make credit decisions. Our website offers an infomediary service that will attempt to connect you with independent, third party lenders and financial service providers who may secure a loan for you. The operator of this website is not a lender, nor a broker, agent or representative to any lender and does not make cash advances or credit decisions. Advertising on or through this website does not constitute an offer or solicitation to lend money to you. Financial terms of any loan should be disclosed to you by the lender. Lenders who receive the information you provide may use the information to verify your identity and/or perform a credit check which may or may not affect your credit score. Credit checks through some credit reporting agencies or data aggregators (Microbilt, Teletrack, DP Bureau, or DataX) which track consumer transactions with lending institutions generally do not affect your credit record or score. Credit checks through TransUnion, Equifax, or Experian may leave a record and affect your credit score. By submitting information through our website for the Lenders, you affirmatively agree to allow such Lenders to review, verify, and research your information in this manner. For information and questions regarding your cash advance or payday loan and credit checks, please contact your lender directly. The operator of this website is a marketer who is compensated for their services as described in our marketing disclosure and does not endorse or recommend any lender on or through this site.</p>
+                              <p style="color: black;font-weight: bold;font-family:'Times New Roman', Times, serif ;">Legal Disclaimer: Finance Solution Center is not a lender, does not broker loans, and does not make credit decisions. Our website offers an infomediary service that will attempt to connect you with independent, third party lenders and financial service providers who may secure a loan for you. The operator of this website is not a lender, nor a broker, agent or representative to any lender and does not make cash advances or credit decisions. Advertising on or through this website does not constitute an offer or solicitation to lend money to you. Financial terms of any loan should be disclosed to you by the lender. Lenders who receive the information you provide may use the information to verify your identity and/or perform a credit check which may or may not affect your credit score. Credit checks through some credit reporting agencies or data aggregators (Microbilt, Teletrack, DP Bureau, or DataX) which track consumer transactions with lending institutions generally do not affect your credit record or score. Credit checks through TransUnion, Equifax, or Experian may leave a record and affect your credit score. By submitting information through our website for the Lenders, you affirmatively agree to allow such Lenders to review, verify, and research your information in this manner. For information and questions regarding your cash advance or payday loan and credit checks, please contact your lender directly. The operator of this website is a marketer who is compensated for their services as described in our marketing disclosure and does not endorse or recommend any lender on or through this site.</p>
                               <p></p>
-                              <p>Availability: Residents of some states may not qualify for short-term loans provided by the lenders and third-parties they are connected with on this website. Our website makes no warranties, guarantees, or representations that you will qualify for any third party services by using our website. The services provided on this website are void where prohibited.</p>
+                              <p style="color: black;font-weight: bold;font-family:'Times New Roman', Times, serif ;">Availability: Residents of some states may not qualify for short-term loans provided by the lenders and third-parties they are connected with on this website. Our website makes no warranties, guarantees, or representations that you will qualify for any third party services by using our website. The services provided on this website are void where prohibited.</p>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </section>
+         </section> -->
+        
+        
+        
+        
+        
+        
+        
+        
+       
+           <!--FONT-AWESOME - ICONS-->
+             <script src="https://kit.fontawesome.com/65a5635b7a.js" crossorigin="anonymous"></script>
+         
+         
+           <!--BOOTSTRAP-->
+             <!--Standard bootstrap css-->  
+         
+           <link href="https://fonts.googleapis.com/css2?family=Abel&family=Allerta&family=Allerta+Stencil&family=Amatic+SC&family=Arimo&family=Cabin&family=Crimson+Text&family=Didact+Gothic&family=Dosis:wght@200&family=Flamenco:wght@300&family=Fredericka+the+Great&family=Imprima&family=Inconsolata:wght@200&family=Josefin+Sans:wght@100&family=Josefin+Slab:wght@100&family=Karla&family=Merriweather:wght@300&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100&family=Muli:wght@200&family=Old+Standard+TT&family=Oswald:wght@200&family=Quicksand:wght@300&family=Space+Mono&family=Squada+One&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+         
+         
+           </head>
+         <body>
+         
+            <div class="feat bg-gray pt-5 pb-5">
+             <div class="container">
+               <div class="row">
+                 
+         
+                 <div class="section-head col-sm-12">
+                   <h1 class="display-1 py-4 text-center">R<span class="rnd">R</span></h1>
+                   <h4><span>Ready to</span> Roll?</h4>
+                   <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+                 </div>
+         
+         
+                 <div class="col-lg-12 col-sm-6">
+                   <div class="item"> 
+                       <span class="icon feature_box_col_one ">
+                         <svg width="1.6em" height="1.6em" viewBox="0 0 16 16" class="bi pb-2 bi-award" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l-1.51-.229L8 1.126l-1.355.702-1.51.229-.684 1.365-1.086 1.072L3.614 6l-.25 1.506 1.087 1.072.684 1.365 1.51.229L8 10.874l1.356-.702 1.509-.229.684-1.365 1.086-1.072L12.387 6l.248-1.506-1.086-1.072-.684-1.365z"/>
+                           <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                       </svg>
+                     </span>
+                     <h6>Consumer Notice</h6>
+                     <p style="text-align: left;">Payday loans or cash advances are made for the purpose of assisting consumers with short-term financing to resolve immediate cash needs and should not be considered a long-term solution. Submitting a loan request on this website does not guarantee that you will be connected with an independent lender or approved for a loan or cash advance. Loan terms, including loan amounts and transfer times for loans, vary among lenders and may be dependent upon the laws of the state in which you reside. If you are connected with a lender on our website, you may be directed to a third party website whose privacy practices and terms of use may significantly differ from our own. You are encouraged to read your lender’s privacy practices and terms of use. Consumers facing financial debt difficulties should seek advice from the appropriate professional before entering into any type of loan. You are encouraged to contact your lender directly for more information.</p>
+                   </div>
+                 </div>
+         
+                 <div class="col-lg-12 col-sm-6">
+                   <div class="item"> 
+                     <span class="icon feature_box_col_two">
+                       <svg width="1.6em" height="1.6em" viewBox="0 0 16 16" class="bi pb-2 bi-blockquote-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                         <path d="M12.168 6.352c.184.105.332.197.445.275.114.074.229.174.346.299.11.117.193.24.252.369s.1.295.123.498h-.281c-.243 0-.432.06-.569.182-.14.117-.21.29-.21.521 0 .164.062.318.187.463.121.14.289.21.504.21.336 0 .576-.108.72-.327.145-.223.217-.514.217-.873 0-.254-.054-.485-.164-.692a2.436 2.436 0 0 0-.398-.562c-.16-.168-.33-.31-.51-.428-.18-.117-.33-.213-.451-.287l-.211.352zm-2.168 0c.184.105.332.197.445.275.114.074.229.174.346.299.113.12.2.246.258.375.055.125.094.289.117.492h-.281c-.242 0-.432.06-.569.182-.14.117-.21.29-.21.521 0 .164.062.318.187.463.121.14.289.21.504.21.336 0 .576-.108.72-.327.145-.223.217-.514.217-.873 0-.254-.054-.485-.164-.692a2.438 2.438 0 0 0-.398-.562c-.16-.168-.33-.31-.51-.428-.18-.117-.33-.213-.451-.287L10 6.352z"/>
+                       </svg>  
+                     </span>
+                     <h6>Legal Disclaimer</h6>
+                     <p style="text-align: left;">Cash2Lending is not a lender, does not broker loans, and does not make credit decisions. Our website offers an infomediary service that will attempt to connect you with independent, third party lenders and financial service providers who may secure a loan for you. The operator of this website is not a lender, nor a broker, agent or representative to any lender and does not make cash advances or credit decisions. Advertising on or through this website does not constitute an offer or solicitation to lend money to you. Financial terms of any loan should be disclosed to you by the lender. Lenders who receive the information you provide may use the information to verify your identity and/or perform a credit check which may or may not affect your credit score. Credit checks through some credit reporting agencies or data aggregators (Microbilt, Teletrack, DP Bureau, or DataX) which track consumer transactions with lending institutions generally do not affect your credit record or score. Credit checks through TransUnion, Equifax, or Experian may leave a record and affect your credit score. By submitting information through our website for the Lenders, you affirmatively agree to allow such Lenders to review, verify, and research your information in this manner. For information and questions regarding your cash advance or payday loan and credit checks, please contact your lender directly. The operator of this website is a marketer who is compensated for their services as described in our marketing disclosure and does not endorse or recommend any lender on or through this site.</p>
+                   </div>
+                 </div>
+                
+                 <div class="col-lg-12 col-sm-6">
+                   <div class="item"> 
+                     <span class="icon feature_box_col_three">
+                       <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi pb-2 bi-book-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" d="M8.5 2.687v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                       </svg>
+                     </span>
+                     <h6>Availability</h6>
+                     <p style="text-align: left;">Residents of some states may not qualify for short-term loans provided by the lenders and third-parties they are connected with on this website. Our website makes no warranties, guarantees, or representations that you will qualify for any third party services by using our website. The services provided on this website are void where prohibited.</p>
+                   </div>
+                 </div>
+         
+                
+               </div>
+             </div>
+           </div>
+         
+     
+        
+        
+        
+        
+        
+        
+        
          <section class="elementor-section elementor-top-section elementor-element elementor-element-0c5daa2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0c5daa2" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d4357a5" data-id="d4357a5" data-element_type="column">
