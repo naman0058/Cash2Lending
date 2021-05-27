@@ -192,4 +192,10 @@ router.post('/validation',(req,res)=>{
 
 
 
+
+router.get('/blogs',(req,res)=>{
+  res.render('blog')
+})
+
+
 module.exports = router;

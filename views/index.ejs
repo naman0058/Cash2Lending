@@ -635,7 +635,7 @@ p { color: hsl(229, 6%, 66%); }
 
 @media (min-width: 1166px) {
   .cards-container {
-    width: 1106px;
+    width: 750px;
   }
 }
 
@@ -921,66 +921,42 @@ p { color: hsl(229, 6%, 66%); }
                         <div class="elementor-widget-container">
                            <div class="elementor-shortcode">
                               <script type="text/javascript">lrc__rates["lrc"] = {"formheader":false,"currency":"$","ba":"before","separator":"comma","decimals":"float","rounding":"noround","loanlabel":"How much do you want to borrow?","loanmin":1000,"loanmax":15000,"loaninitial":1000,"loanstep":1000,"termlabel":"For how long?","period":"months","periodmin":12,"periodmax":72,"periodinitial":0,"periodstep":1,"singleperiodlabel":"month","periodlabel":"months","adminfeevalue":0,"adminfeetype":"fixed","adminfeemin":0,"adminfeemax":0,"adminfeewhen":"beforeinterest","termfeevalue":0,"primary":2.6,"secondary":false,"trigger":false,"creditselectorlabel":"Your credit rating","initialrating":2,"triggers":[{"name":"Poor","low":3},{"name":"Average","low":3},{"name":"Good","low":3},{"name":"Very Good","low":3},{"name":"Excellent","low":3}],"repaymentperiod":"rmonths","applynowlabel":"Apply Now","applynowaction":0,"querystructure":"?amount=[amount]&term=[term]","sort":"principal,term,rate,rating,interest,processing,repayment,grandtotal","input-background":"#FFFFFF","input-colour":0,"slider-colour":"#CCCCCC","output-background":0,"output-colour":"#FFFFFF","apply-background":0,"hover-background":0,"apply-label":"#FFFFFF","excellent-colour":0,"verygood-colour":0,"good-colour":0,"fair-colour":0,"poor-colour":0,"currencyspace":false,"decimalcomma":false,"adminfee":false,"applynow":true,"showtermmarkers":false,"showloanmarkers":false,"usecreditselector":true,"termfee":false,"applynowquery":false,"nominalapr":false,"output-strong":true,"useprincipal":true,"principalcaption":"Loan amount","useterm":true,"termcaption":"Loan Term","userate":true,"ratecaption":"APR","userating":true,"ratingcaption":"Credit rating","useinterest":true,"interestcaption":"Interest to pay","useprocessing":true,"processingcaption":"Processing","userepayment":true,"repaymentcaption":"Repayment amount","usegrandtotal":true,"grandtotalcaption":"Total to pay","output-padding":3,"cb":"$","ca":" "};lrc_form = "N\/A";</script>
-                              <form action="" class="lrc_form" method="POST" id="lrc">
-                                 <div class="lrc-sections lrc-float">
-                                    <div class="lrc-inputs">
-                                       <div class="range lrc-slider-principal">
-                                          <div class="lrc-slider-label">How much do you want to borrow?</div>
-                                          <div class="lrc_slider_output">
-                                             <div class="output-pad"><span class="lrc-down circle-control"></span><span class="output-values"><output></output></span><span class="lrc-up circle-control"></span></div>
-                                          </div>
-                                          <input type="range" name="loan-amount" min="1000" max="15000" value="1000" step="1000" data-lrc>
-                                       </div>
-                                       <div class="lrc-slider-label">For how long?</div>
-                                       <div class="range lrc-slider-term">
-                                          <div class="lrc_slider_output">
-                                             <div class="output-pad"><span class="lrc-down circle-control"></span><span class="output-values"><output></output></span><span class="lrc-up circle-control"></span></div>
-                                          </div>
-                                          <input type="range" name="loan-period" min="12" max="72" value="0" step="1" data-lrc>
-                                       </div>
-                                       <div class="lrc-slider-label">Your credit rating:</div>
-                                       <div class="creditscore"><input type="radio" name="creditselector" value="0"  id="Poor"><label for="Poor" class="poor">Poor</label><input type="radio" name="creditselector" value="1"  id="Average"><label for="Average" class="fair">Average</label><input type="radio" name="creditselector" value="2" checked="checked" id="Good"><label for="Good" class="good">Good</label><input type="radio" name="creditselector" value="3"  id="Very Good"><label for="Very Good" class="verygood">Very Good</label><input type="radio" name="creditselector" value="4"  id="Excellent"><label for="Excellent" class="excellent">Excellent</label></div>
-                                       <div style="clear:both"></div>
-                                    </div>
-                                    <div class="lrc-outputs">
-                                       <table class="output-table">
-                                          <tr>
-                                             <td class="table-label">Loan amount</td>
-                                             <td class="values-colour table-output"><strong><span class="principal"></span></strong></td>
-                                          </tr>
-                                          <tr>
-                                             <td class="table-label">Loan Term</td>
-                                             <td class="values-colour table-output"><strong><span class="term"></span></strong></td>
-                                          </tr>
-                                          <tr>
-                                             <td class="table-label">APR</td>
-                                             <td class="values-colour table-output"><strong><span class="rate"></span></strong></td>
-                                          </tr>
-                                          <tr>
-                                             <td class="table-label">Credit rating</td>
-                                             <td class="values-colour table-output"><strong><span class="rating"></span></strong></td>
-                                          </tr>
-                                          <tr>
-                                             <td class="table-label">Interest to pay</td>
-                                             <td class="values-colour table-output"><strong><span class="interest"></span></strong></td>
-                                          </tr>
-                                          <tr>
-                                             <td class="table-label">Processing</td>
-                                             <td class="values-colour table-output"><strong><span class="processing"></span></strong></td>
-                                          </tr>
-                                          <tr>
-                                             <td class="table-label">Repayment amount</td>
-                                             <td class="values-colour table-output"><strong><span class="repayment"></span></strong></td>
-                                          </tr>
-                                          <tr>
-                                             <td class="table-label">Total to pay</td>
-                                             <td class="values-colour table-output"><strong><span class="grandtotal"></span></strong></td>
-                                          </tr>
-                                       </table>
-                                    </div>
-                                 </div>
-                                 <div class="ltc_register"><input type="submit" class="submit" name="lrcapply" onclick="this.value='Processing'" value="Apply Now" /></div>
-                              </form>
+                              <main style="margin-bottom: 30px;margin-top: 30px;">
+                                 <ul class="cards-container">
+                                   <li class="cyan-feature-card">
+                                     <h2>PAYDAY LOANS
+                                    </h2>
+                                     <p>
+                                       Get a little extra money before your next paycheck with an Finance Solution Center Advance (also called a Payday Loan)
+                                     </p>
+                                    
+                                   </li>
+                               
+                                   <li class="red-feature-card">
+                                     <h2>INSTALLMENT LOANS</h2>
+                                     <p>
+                                       Get the money you need right now. Pay it back over time.
+                                     </p>
+                                   
+                                   </li>
+                               
+                                   <li class="orange-feature-card">
+                                     <h2>TITLE LOANS</h2>
+                                     <p>
+                                       Get the money you need while continuing to drive your vehicle.
+                                     </p>
+                                   
+                                   </li>
+                               
+                                   <li class="blue-feature-card">
+                                     <h2>LINE OF CREDIT</h2>
+                                     <p>
+                                       Enjoy convenient, personal access to money whenever you need it.
+                                     </p>
+                                   
+                                   </li>
+                                 </ul>
+                               </main>
                            </div>
                         </div>
                      </div>
@@ -1215,45 +1191,7 @@ p { color: hsl(229, 6%, 66%); }
          </section> -->
       
       
-  <h1 style="text-align: center;color: #000;">Our Features</h1>
-          
-          <main style="margin-bottom: 30px;margin-top: 30px;">
-            <ul class="cards-container">
-              <li class="cyan-feature-card">
-                <h2>PAYDAY LOANS
-               </h2>
-                <p>
-                  Get a little extra money before your next paycheck with an Cash2lending Advance (also called a Payday Loan)
-                </p>
-               
-              </li>
-          
-              <li class="red-feature-card">
-                <h2>INSTALLMENT LOANS</h2>
-                <p>
-                  Get the money you need right now. Pay it back over time.
-                </p>
-              
-              </li>
-          
-              <li class="orange-feature-card">
-                <h2>TITLE LOANS</h2>
-                <p>
-                  Get the money you need while continuing to drive your vehicle.
-                </p>
-              
-              </li>
-          
-              <li class="blue-feature-card">
-                <h2>LINE OF CREDIT</h2>
-                <p>
-                  Enjoy convenient, personal access to money whenever you need it.
-                </p>
-              
-              </li>
-            </ul>
-          </main>
-          
+ 
        
       
       
@@ -1679,7 +1617,7 @@ p { color: hsl(229, 6%, 66%); }
                     </div>
                     <div class="">
                       <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What is a Cash Advance (also known as a Payday Loan)?</h6></a>
-                      <p class="text-secondary" style="line-height: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis assumenda ad deleniti optio dolorum fugiat nobis consequuntur deserunt aut.</p>
+                      <p class="text-secondary" style="line-height: 2;">A Cash Advance (or Payday Loan) is a short-term, small-dollar loan, often used to cover unexpected expenses or just get a little extra money before your next paycheck. A Cash Advance is a personal loan that provides an alternative to bouncing checks. Cash Advances are used to cover short-term financial situations — they are not a long-term financial solution</p>
                     </div>
                   </div>
                 </div>
@@ -1691,8 +1629,8 @@ p { color: hsl(229, 6%, 66%); }
                     <div class="mr-3 bg-dark text-white rounded-circle">
                     </div>
                     <div class="">
-                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What could be your 2nd question?</h6></a>
-                      <p class="text-secondary" style="line-height: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis assumenda ad deleniti optio dolorum fugiat nobis consequuntur deserunt aut.</p>
+                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What’s an Installment Loan?</h6></a>
+                      <p class="text-secondary" style="line-height: 2;">An Installment Loan gets you the money you need today, with the ability to repay over time. Installment Loans are longer-term personal loans with terms from 2 to 24 months, depending on your state. We offer Installment Loans in both in-store and online in most states.</p>
                     </div>
                   </div>
                 </div>
@@ -1704,8 +1642,8 @@ p { color: hsl(229, 6%, 66%); }
                     <div class="mr-3 bg-dark text-white rounded-circle">
                     </div>
                     <div class="">
-                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What could be your 3rd question?</h6></a>
-                      <p class="text-secondary" style="line-height: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis assumenda ad deleniti optio dolorum fugiat nobis consequuntur deserunt aut.</p>
+                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">How much money can I get?</h6></a>
+                      <p class="text-secondary" style="line-height: 2;">Installment Loan amounts vary by state. When applying for a loan, we use your personal information to determine a loan amount that works for you.</p>
                     </div>
                   </div>
                 </div>
@@ -1717,8 +1655,8 @@ p { color: hsl(229, 6%, 66%); }
                     <div class="mr-3 bg-dark text-white rounded-circle">
                     </div>
                     <div class="">
-                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What could be your 4th question?</h6></a>
-                      <p class="text-secondary" style="line-height: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis assumenda ad deleniti optio dolorum fugiat nobis consequuntur deserunt aut.</p>
+                      <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.5rem;">What is a Title Loan?</h6></a>
+                      <p class="text-secondary" style="line-height: 2;">If you own the title to your vehicle, a Title Loan allows you to borrow money based on its value. Your car is used as collateral for the loan so you can get the money you need immediately, and keep driving your car while you pay back your personal loan. Title Loans are ideal for individuals looking for a fast solution to short-term financial needs.</p>
                     </div>
                   </div>
                 </div>
@@ -1854,7 +1792,7 @@ p { color: hsl(229, 6%, 66%); }
                  <div class="section-head col-sm-12">
                    <h1 class="display-1 py-4 text-center">R<span class="rnd">R</span></h1>
                    <h4><span>Ready to</span> Roll?</h4>
-                   <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+                   <p>Borrow $2,000 to $15,000* as soon as the next business day ‡ from 3% to 5 % APR.</p>
                  </div>
          
          
