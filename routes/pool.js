@@ -4,9 +4,9 @@ require('dotenv').config()
 
 const pool = mysql.createPool({
  
- host : 'db-mysql-blr1-35944-do-user-8703439-0.b.db.ondigitalocean.com',
+ host : 'db-mysql-blr1-05486-do-user-9022348-0.b.db.ondigitalocean.com',
    user: 'doadmin',
-    password : 'r5c1d14p7xg6e2sr',
+    password : 'm8wcz9akv2dbl1jy',
     database: 'demo',
     port:'25060' ,
     multipleStatements: true
